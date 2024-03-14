@@ -1,3 +1,10 @@
 body {
-  background-color: aquamarine;
+  background-color: #fdedbe;
+}
+.weather-app {
+  background-color: #ffc73e;
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 20px 30px 15px 30px;
+  box-shadow: -10px 10px 33px 0px #ddae39;
 }
