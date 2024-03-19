@@ -1,6 +1,7 @@
 body {
   background-color: #fdedbe;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Cairo", sans-serif;
+  font-weight: 500;
   color: #006666;
   text-align: center;
 }
@@ -39,18 +40,19 @@ a {
   justify-content: space-around;
 }
 .temperature-data strong {
-  font-size: 35px;
-  font-weight: bolder;
+  font-size: 40px;
+  font-weight: 700;
 }
 .temperature {
-  font-size: 70px;
-  font-weight: bolder;
+  font-size: 100px;
+  font-weight: 900;
 }
 .temperature-unit {
   position: relative;
-  top: -75px;
-  left: 100px;
+  top: -135px;
+  left: 128px;
   font-size: 20px;
+  font-weight: 900;
 }
 
 footer {
