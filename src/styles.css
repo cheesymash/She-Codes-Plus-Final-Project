@@ -1,6 +1,10 @@
 body {
   background-color: #fdedbe;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #006666;
+}
+a {
+  color: #ff9933;
 }
 .weather-app {
   background-color: #ffc73e;
@@ -23,8 +27,33 @@ body {
   border: none;
   border-radius: 6px;
   padding: 11px 30px;
-  width: auto;
+  width: 20%;
   color: #fdedbe;
   font-size: 16px;
   margin-left: 5px;
+}
+.temperature-data {
+  text-align: center;
+  display: block;
+  justify-content: space-around;
+}
+.temperature-data strong {
+  font-size: 35px;
+  font-weight: bolder;
+}
+.temperature {
+  font-size: 70px;
+  font-weight: bolder;
+}
+.temperature-unit {
+  position: relative;
+  top: -75px;
+  left: 100px;
+  font-size: 20px;
+}
+
+footer {
+  border-top: 1px solid #fdedbe;
+  padding-top: 15px;
+  text-align: center;
 }
