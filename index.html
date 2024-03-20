@@ -15,25 +15,27 @@
   <body>
     <div class="weather-app" id="weather-app">
       <header>
-        <form class="search-form">
+        <form class="search-form" id="search-form">
           <input
             type="search"
             placeholder="Enter a City..."
             required
             class="search-form-input"
+            id="search-form-input"
           />
           <input
             type="submit"
             value="Search"
             required
             class="search-form-button"
+            id="search-form-button"
           />
         </form>
         <br />
       </header>
       <main>
         <div class="temperature-data">
-          <div class="city">London</div>
+          <div class="city" id="city">London</div>
           <p class="get-date-time">Wednesday 13th March, 16.25</p>
           <div class="temperature">12</div>
           <span class="temperature-unit">°C</span>
