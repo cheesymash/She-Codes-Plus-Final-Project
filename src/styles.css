@@ -43,13 +43,18 @@ a {
   display: block;
   justify-content: space-around;
 }
+.get-date-time {
+  margin: 0;
+  position: relative;
+  top: -16px;
+}
 .city {
   font-size: 41px;
   font-weight: 700;
 }
 .temperature {
   position: relative;
-  top: -58px;
+  top: -76px;
   left: -9px;
   font-size: 150px;
   font-weight: 900;
@@ -57,7 +62,7 @@ a {
 }
 .temperature-unit {
   position: relative;
-  top: -144px;
+  top: -163px;
   left: 75px;
   font-size: 20px;
   font-weight: 900;
