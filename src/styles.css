@@ -43,7 +43,7 @@ a {
   display: block;
   justify-content: space-around;
 }
-.get-date-time {
+.date-time {
   margin: 0;
   position: relative;
   top: -16px;
