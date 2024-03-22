@@ -86,10 +86,15 @@ a {
 }
 .row {
   display: flex;
+  line-height: 1;
 }
 .weekday {
   font-weight: 700;
   font-size: 16px;
+  line-height: 15px;
+}
+.weather-icons {
+  display: inline-block;
 }
 .week-forcast-temperature {
   font-size: 13px;
