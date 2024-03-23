@@ -95,7 +95,7 @@ a {
 }
 .week-forcast {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-direction: row;
   line-height: 1;
 }
