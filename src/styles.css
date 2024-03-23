@@ -87,8 +87,7 @@ a {
   height: 50px;
 }
 .weather-icon {
-  width: 70px;
-  height: 70px;
+  size: 15px;
 }
 .weather-forecast {
   padding: 5px 0px 16px 0px;
@@ -97,6 +96,7 @@ a {
   display: flex;
   justify-content: space-around;
   flex-direction: row;
+  -ms-flex-align: center;
   line-height: 1;
 }
 .weekday {
@@ -105,11 +105,9 @@ a {
   line-height: 15px;
 }
 .weather-forecast-icon {
-  width: 38px;
+  size: 50px;
 }
-.week-forecast-temperature {
-  font-size: 13px;
-}
+
 p.strong {
   font-weight: 600;
 }
