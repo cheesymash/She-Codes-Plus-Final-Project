@@ -93,8 +93,10 @@ a {
 .weather-forcast {
   padding: 5px 0px 16px 0px;
 }
-.row {
+.week-forcast {
   display: flex;
+  justify-content: space-between;
+  flex-direction: row;
   line-height: 1;
 }
 .weekday {
