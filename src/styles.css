@@ -64,11 +64,12 @@ a {
 .city {
   font-size: 41px;
   font-weight: 700;
+  margin-top: 1px;
 }
 .temperature {
   position: relative;
   top: -76px;
-  left: -21px;
+  left: -30px;
   font-size: 150px;
   font-weight: 900;
   height: 170px;
@@ -78,8 +79,8 @@ a {
   flex-direction: column;
   align-items: center;
   position: relative;
-  top: -175px;
-  left: 80px;
+  top: -176px;
+  left: 84px;
 }
 .temperature-unit {
   font-size: 45px;
@@ -88,15 +89,18 @@ a {
 }
 .weather-icon {
   size: 15px;
+  height: 90px;
+  width: 90px;
 }
-.weather-forecast {
-  padding: 5px 0px 16px 0px;
+
+.forecast-information {
+  margin-bottom: 25px;
 }
+
 .week-forecast {
   display: flex;
   justify-content: space-around;
   flex-direction: row;
-  -ms-flex-align: center;
   line-height: 1;
 }
 .weekday {
@@ -105,9 +109,14 @@ a {
   line-height: 15px;
 }
 .weather-forecast-icon {
-  size: 50px;
+  display: flex;
+  align-items: baseline;
+  height: 50px;
+  width: 50px;
 }
-
+.weather-forecast-temperature {
+  display: inline;
+}
 p.strong {
   font-weight: 600;
 }
