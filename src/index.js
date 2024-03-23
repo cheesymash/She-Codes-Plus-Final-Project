@@ -17,6 +17,8 @@ function refreshWeather(responce) {
   temperatureElement.innerHTML = Math.round(temperature);
   humidityElement.innerHTML = `${responce.data.temperature.humidity}%`;
   windSpeedElement.innerHTML = `${Math.round(responce.data.wind.speed)}km/h`;
+
+  getForcast(responce.data.city);
 } //changes temperature and conditions innerhtml
 
 function formatDate(date) {
@@ -51,9 +53,17 @@ function handleSearchSubmit(event) {
   cityElement.innerHTML = searchInput.value;
 
   searchCity(searchInput.value);
-} //changes city innerhtml using search
+} 
 
-function displayForcast() {
+function getForcast(city) {
+  let apiKey = "5034aee8be80fd426tb5da773ac1o38a";
+  let apiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}&units=metric`;
+  axios(apiUrl).then(displayForecast);
+}
+
+function displayForecast(responce) {
+  console.log(responce.data);
+
   let days = ["Mon", "Tue", "Wed", "Thur", "Fri"];
   let forcastHtml = "";
 
@@ -82,5 +92,4 @@ let searchFormElement = document.querySelector("#search-form");
 searchFormElement.addEventListener("submit", handleSearchSubmit);
 //function searchform- addevent listener
 
-searchCity("London"); //automatically allows city to be london when refreshed
-displayForcast();
+searchCity("London");
