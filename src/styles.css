@@ -14,7 +14,14 @@ a {
 }
 .weather-app {
   display: block;
-  background-color: #ffc73e;
+  background-image: linear-gradient(
+    to top,
+    #fdedbe,
+    #fee59e,
+    #fedd7e,
+    #ffd55c,
+    #ffcc33
+  );
   max-width: 600px;
   margin: 30px auto;
   padding: 20px 30px 15px 30px;
@@ -61,25 +68,27 @@ a {
 .temperature {
   position: relative;
   top: -76px;
-  left: -25px;
+  left: -21px;
   font-size: 150px;
   font-weight: 900;
   height: 170px;
 }
-.temperature-unit {
+.temperature-icon-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   position: relative;
-  top: -181px;
-  left: 105px;
+  top: -175px;
+  left: 80px;
+}
+.temperature-unit {
   font-size: 45px;
   font-weight: 900;
+  height: 50px;
 }
 .weather-icon {
-  width: 65px;
-  height: 66px;
-  position: relative;
-  top: -119px;
-  left: 54px;
-  font-size: 44px;
+  width: 70px;
+  height: 70px;
 }
 .weather-forcast {
   padding: 5px 0px 16px 0px;
@@ -93,9 +102,6 @@ a {
   font-size: 16px;
   line-height: 15px;
 }
-.weather-icons {
-  display: inline-block;
-}
 .week-forcast-temperature {
   font-size: 13px;
 }
@@ -108,5 +114,3 @@ footer {
   text-align: center;
   font-size: 10px;
 }
-
-
