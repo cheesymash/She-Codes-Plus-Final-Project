@@ -90,10 +90,10 @@ a {
   width: 70px;
   height: 70px;
 }
-.weather-forcast {
+.weather-forecast {
   padding: 5px 0px 16px 0px;
 }
-.week-forcast {
+.week-forecast {
   display: flex;
   justify-content: space-around;
   flex-direction: row;
@@ -104,7 +104,10 @@ a {
   font-size: 16px;
   line-height: 15px;
 }
-.week-forcast-temperature {
+.weather-forecast-icon {
+  width: 38px;
+}
+.week-forecast-temperature {
   font-size: 13px;
 }
 p.strong {
